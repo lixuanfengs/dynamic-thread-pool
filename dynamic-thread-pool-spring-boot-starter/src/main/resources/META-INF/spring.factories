@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+cn.cactusli.middleware.dynamic.thread.pool.sdk.config.DynamicThreadPoolAutoConfiguration
