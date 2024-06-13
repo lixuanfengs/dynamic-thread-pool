@@ -37,4 +37,8 @@ build/
 ### Mac OS ###
 .DS_Store
 
-.idea/
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
