@@ -1,0 +1,24 @@
+server:
+  port: 8092
+
+redis:
+  sdk:
+    config:
+      host: 192.168.1.18 # 地址
+      port: 6380 # 端口
+      password: Nstr.@#$808 # 密码，建议生产环境开启
+      pool-size: 10
+      min-idle-size: 5
+      idle-timeout: 30000
+      connect-timeout: 5000
+      retry-attempts: 3
+      retry-interval: 1000
+      ping-interval: 60000
+      keep-alive: true
+
+
+# 日志
+logging:
+  level:
+    root: info
+  config: classpath:logback-spring.xml

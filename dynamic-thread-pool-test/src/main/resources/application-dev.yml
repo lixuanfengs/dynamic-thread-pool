@@ -1,0 +1,31 @@
+server:
+  port: 8091
+
+# 线程池配置
+thread:
+  pool:
+    executor:
+      config:
+        core-pool-size: 20
+        max-pool-size: 50
+        keep-alive-time: 5000
+        block-queue-size: 5000
+        policy: CallerRunsPolicy
+
+# 动态线程池管理配置
+dynamic:
+  thread:
+    pool:
+      config:
+        # 状态；true = 开启、false 关闭
+        enabled: true
+        # redis host
+        host: 192.168.1.18 # 地址
+        port: 6380 # 端口
+        password: Nstr.@#$808 # 密码，建议生产环境开启
+
+# 日志
+logging:
+  level:
+    root: info
+  config: classpath:logback-spring.xml
